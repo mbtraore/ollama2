@@ -1,0 +1,3 @@
+{{- if .Values.shiny.ingress.enabled }}
+- You can connect to this ollama app with your browser on this [link](http{{ if $.Values.ollama.ingress.tls }}s{{ end }}://{{ .Values.ollama.ingress.hostname }})
+{{- end }}

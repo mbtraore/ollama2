@@ -1,0 +1,10 @@
+ollama:
+  image:
+    repository: ollama/ollama
+  ingress:
+    enabled: true
+    hostname: chart-exemple.local
+  resources:
+    requests:
+      cpu: 3000m
+      memory: 2Gi
